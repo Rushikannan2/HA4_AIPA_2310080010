@@ -1,0 +1,10 @@
+# CO4 Assignment 1 - YOLO object detection experiment
+# Python 3.11 virtual environment (.venv), notebook kernel: alm4-yolo
+jupyter>=1.1
+ipykernel>=6.29
+ultralytics>=8.3
+opencv-python>=4.9
+pandas>=2.2
+matplotlib>=3.8
+pillow>=10.3
+python-docx>=1.1

@@ -1,0 +1,5 @@
+Condition,Reading A: missed vs original detections (of 8),Reading B: missed vs scene inventory (of 12)
+Original,0,4
+Reduced Brightness,0,3
+Blurred,1,4
+Brightness + Blur,1,4

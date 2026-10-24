@@ -1,0 +1,9 @@
+Condition,Class,Confidence,Bounding box,Best IoU vs same-class original box,Best IoU vs any original box,Category
+Reduced Brightness,person,0.3029,"(914, 459, 970, 536)",0.97,0.97,duplicate of an already detected object
+Reduced Brightness,person,0.2733,"(1113, 498, 1166, 544)",0.0,0.027,new - no counterpart in the original
+Blurred,person,0.2549,"(778, 464, 811, 559)",0.645,0.645,duplicate of an already detected object
+Blurred,person,0.3142,"(170, 411, 224, 476)",0.0,0.014,new - no counterpart in the original
+Blurred,person,0.2536,"(1245, 492, 1286, 613)",0.0,0.175,new - no counterpart in the original
+Brightness + Blur,person,0.2939,"(915, 460, 969, 535)",0.957,0.957,duplicate of an already detected object
+Brightness + Blur,person,0.2823,"(1244, 490, 1287, 613)",0.0,0.18,new - no counterpart in the original
+Brightness + Blur,person,0.2748,"(170, 410, 223, 477)",0.0,0.014,new - no counterpart in the original

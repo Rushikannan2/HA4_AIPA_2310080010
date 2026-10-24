@@ -1,0 +1,9 @@
+Object,Condition,Detected,Confidence,delta_C = C_original - C_modified,IoU vs original box,Center shift (px),Width change (%),Height change (%),"Bounding box (x1, y1, x2, y2)"
+"Object A (bus, large)",Original,Detected,0.9021,0.0,1.0,0.0,0.0,0.0,"(63, 250, 682, 651)"
+"Object A (bus, large)",Reduced Brightness,Detected,0.8993,0.0028,0.992,1.2,-0.2,0.4,"(65, 249, 682, 652)"
+"Object A (bus, large)",Blurred,Detected,0.8922,0.0099,0.977,4.3,0.0,1.8,"(64, 250, 682, 659)"
+"Object A (bus, large)",Brightness + Blur,Detected,0.8969,0.0052,0.974,4.5,-0.0,2.3,"(65, 249, 682, 660)"
+"Object B (car, small)",Original,Detected,0.3205,0.0,1.0,0.0,0.0,0.0,"(1194, 480, 1263, 602)"
+"Object B (car, small)",Reduced Brightness,Detected,0.262,0.0585,0.969,1.3,1.2,1.0,"(1193, 480, 1263, 603)"
+"Object B (car, small)",Blurred,Missed,missed/N/A,N/A,0.0,,,,not detected
+"Object B (car, small)",Brightness + Blur,Missed,missed/N/A,N/A,0.0,,,,not detected

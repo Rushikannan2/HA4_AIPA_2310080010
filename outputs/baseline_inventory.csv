@@ -1,0 +1,7 @@
+Object present in scene,Best score in ORIGINAL (diagnostic conf 0.03),Detected in any condition (conf >= 0.25)?
+"motorcycle (with rider, centre of road)",0.07,no
+"same bike, mis-seen as 'bicycle'",0.128,no
+bus driver (behind windshield),0.171,no
+white-car occupant (behind glass),0.235,no
+figure behind bollards (right of car),0.037,no
+white vehicle cut off at right edge,0.205,no

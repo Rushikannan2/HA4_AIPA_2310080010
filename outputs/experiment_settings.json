@@ -1,0 +1,31 @@
+{
+  "model": "yolo11n.pt",
+  "weights": "COCO-pretrained (no training or fine-tuning in this assignment)",
+  "device": "cpu",
+  "confidence_threshold": 0.25,
+  "image_size": 640,
+  "runs_per_condition": 3,
+  "timing_method": "wall-clock around model.predict, mean of 3 timed runs after 1 warm-up run",
+  "iou_match_threshold": 0.5,
+  "no_counterpart_iou": 0.3,
+  "input_files": {
+    "Original": "01_original_input.png",
+    "Reduced Brightness": "02_reduced_brightness_input.png",
+    "Blurred": "03_blurred_input.png",
+    "Brightness + Blur": "04_brightness_plus_blur_input.png"
+  },
+  "modifications": {
+    "supplied reduced brightness": "darker pixel values (measured mean brightness above)",
+    "supplied blur": "Gaussian blur (measured Laplacian variance above)",
+    "notebook demo regeneration": "convertScaleAbs alpha=0.6; GaussianBlur ksize 31x31 sigma 15"
+  },
+  "package_versions": {
+    "ultralytics": "8.4.184",
+    "opencv-python": "5.0.0.93",
+    "torch": "2.14.1",
+    "numpy": "2.4.6",
+    "pandas": "3.1.0",
+    "matplotlib": "3.11.2",
+    "pillow": "13.0.0"
+  }
+}

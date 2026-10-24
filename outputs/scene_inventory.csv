@@ -1,0 +1,14 @@
+No.,Class,Object (visible in original),"Region (x1, y1, x2, y2)",Detected in Original?,Detected in Reduced Brightness?,Detected in Blurred?,Detected in Brightness + Blur?
+1,bus,blue city bus (left),"(63, 250, 682, 651)",yes,yes,yes,yes
+2,car,black car (foreground left),"(354, 463, 797, 752)",yes,yes,yes,yes
+3,car,white car (foreground right),"(907, 460, 1241, 739)",yes,yes,yes,yes
+4,car,distant maroon car behind the white car (the failure case),"(1194, 480, 1263, 602)",yes,yes,no,no
+5,car,white vehicle partly cut off at the right edge,"(1477, 474, 1525, 510)",no,no,no,no
+6,motorcycle,motorcycle with rider (centre of road),"(800, 504, 858, 618)",no,no,no,no
+7,person,pedestrian with backpack (right),"(1317, 427, 1459, 721)",yes,yes,yes,yes
+8,person,standing person behind (boxed twice in the original),"(912, 459, 969, 585)",yes,yes,yes,yes
+9,person,person in white shirt behind the rider,"(781, 466, 807, 542)",yes,yes,yes,yes
+10,person,motorcycle rider,"(803, 468, 857, 607)",yes,yes,yes,yes
+11,person,bus driver behind the windshield,"(168, 411, 223, 477)",no,no,yes,yes
+12,person,occupant behind the white-car windshield,"(1115, 498, 1167, 544)",no,yes,no,no
+-,person,figure behind bollards - identity NOT confirmed [EXCLUDED],"(1244, 497, 1289, 600)",-,-,-,-

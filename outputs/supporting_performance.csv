@@ -1,0 +1,5 @@
+Condition,Physical objects detected (of 8),Duplicate boxes,New or partial-counterpart boxes,Inference time std (ms)
+Original,8,1,0,81.7
+Reduced Brightness,8,1,1,16.7
+Blurred,7,1,2,19.6
+Brightness + Blur,7,1,2,6.4

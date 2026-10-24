@@ -1,0 +1,5 @@
+Condition,Scene objects detected (of 12),Missed vs scene inventory (of 12),Missed object numbers,Missed object names
+Original,8,4,"5, 6, 11, 12",white vehicle partly cut off at the right edge; motorcycle with rider (centre of road); bus driver behind the windshield; occupant behind the white-car windshield
+Reduced Brightness,9,3,"5, 6, 11",white vehicle partly cut off at the right edge; motorcycle with rider (centre of road); bus driver behind the windshield
+Blurred,8,4,"4, 5, 6, 12",distant maroon car behind the white car (the failure case); white vehicle partly cut off at the right edge; motorcycle with rider (centre of road); occupant behind the white-car windshield
+Brightness + Blur,8,4,"4, 5, 6, 12",distant maroon car behind the white car (the failure case); white vehicle partly cut off at the right edge; motorcycle with rider (centre of road); occupant behind the white-car windshield

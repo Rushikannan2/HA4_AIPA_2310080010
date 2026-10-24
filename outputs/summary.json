@@ -1,0 +1,337 @@
+{
+  "device": "cpu",
+  "timing_method": "wall-clock around model.predict, 3 timed runs after 1 warm-up run",
+  "conditions": [
+    {
+      "Condition": "Original",
+      "Objects detected": 9,
+      "Average confidence": 0.6269,
+      "Inference time (ms, mean of 3 runs)": 402.0,
+      "Missed objects": 0,
+      "Missed object classes": "-"
+    },
+    {
+      "Condition": "Reduced Brightness",
+      "Objects detected": 10,
+      "Average confidence": 0.5888,
+      "Inference time (ms, mean of 3 runs)": 373.6,
+      "Missed objects": 0,
+      "Missed object classes": "-"
+    },
+    {
+      "Condition": "Blurred",
+      "Objects detected": 10,
+      "Average confidence": 0.5746,
+      "Inference time (ms, mean of 3 runs)": 381.9,
+      "Missed objects": 1,
+      "Missed object classes": "car"
+    },
+    {
+      "Condition": "Brightness + Blur",
+      "Objects detected": 10,
+      "Average confidence": 0.568,
+      "Inference time (ms, mean of 3 runs)": 368.3,
+      "Missed objects": 1,
+      "Missed object classes": "car"
+    }
+  ],
+  "condition_analysis": {
+    "Original": {
+      "raw_boxes": 9,
+      "physical_objects_total": 8,
+      "physical_objects_detected": 8,
+      "missed_physical_classes": [],
+      "duplicate_boxes": 1,
+      "new_boxes": 0,
+      "inference_runs_ms": [
+        517.1,
+        335.3,
+        353.6
+      ]
+    },
+    "Reduced Brightness": {
+      "raw_boxes": 10,
+      "physical_objects_total": 8,
+      "physical_objects_detected": 8,
+      "missed_physical_classes": [],
+      "duplicate_boxes": 1,
+      "new_boxes": 1,
+      "inference_runs_ms": [
+        397.3,
+        361.0,
+        362.6
+      ]
+    },
+    "Blurred": {
+      "raw_boxes": 10,
+      "physical_objects_total": 8,
+      "physical_objects_detected": 7,
+      "missed_physical_classes": [
+        "car"
+      ],
+      "duplicate_boxes": 1,
+      "new_boxes": 2,
+      "inference_runs_ms": [
+        399.5,
+        354.6,
+        391.5
+      ]
+    },
+    "Brightness + Blur": {
+      "raw_boxes": 10,
+      "physical_objects_total": 8,
+      "physical_objects_detected": 7,
+      "missed_physical_classes": [
+        "car"
+      ],
+      "duplicate_boxes": 1,
+      "new_boxes": 2,
+      "inference_runs_ms": [
+        365.6,
+        377.1,
+        362.1
+      ]
+    }
+  },
+  "image_quality": {
+    "Original": {
+      "mean_brightness": 116.66,
+      "laplacian_variance": 1415.7
+    },
+    "Reduced Brightness": {
+      "mean_brightness": 69.6,
+      "laplacian_variance": 511.1
+    },
+    "Blurred": {
+      "mean_brightness": 116.66,
+      "laplacian_variance": 19.4
+    },
+    "Brightness + Blur": {
+      "mean_brightness": 69.6,
+      "laplacian_variance": 8.2
+    }
+  },
+  "tracked_objects": [
+    {
+      "label": "Object A (bus, large)",
+      "class_name": "bus",
+      "original_confidence": 0.9021,
+      "original_bbox": [
+        63.4,
+        249.6,
+        681.5,
+        651.3
+      ]
+    },
+    {
+      "label": "Object B (car, small)",
+      "class_name": "car",
+      "original_confidence": 0.3205,
+      "original_bbox": [
+        1193.8,
+        479.7,
+        1262.8,
+        601.6
+      ]
+    }
+  ],
+  "investigation": [
+    {
+      "Object": "Object A (bus, large)",
+      "Condition": "Original",
+      "Detected": "Detected",
+      "Confidence": 0.9021,
+      "delta_C = C_original - C_modified": 0.0,
+      "IoU vs original box": 1.0,
+      "Center shift (px)": 0.0,
+      "Width change (%)": 0.0,
+      "Height change (%)": 0.0,
+      "Bounding box (x1, y1, x2, y2)": "(63, 250, 682, 651)"
+    },
+    {
+      "Object": "Object A (bus, large)",
+      "Condition": "Reduced Brightness",
+      "Detected": "Detected",
+      "Confidence": 0.8993,
+      "delta_C = C_original - C_modified": 0.0028,
+      "IoU vs original box": 0.992,
+      "Center shift (px)": 1.2,
+      "Width change (%)": -0.2,
+      "Height change (%)": 0.4,
+      "Bounding box (x1, y1, x2, y2)": "(65, 249, 682, 652)"
+    },
+    {
+      "Object": "Object A (bus, large)",
+      "Condition": "Blurred",
+      "Detected": "Detected",
+      "Confidence": 0.8922,
+      "delta_C = C_original - C_modified": 0.0099,
+      "IoU vs original box": 0.977,
+      "Center shift (px)": 4.3,
+      "Width change (%)": 0.0,
+      "Height change (%)": 1.8,
+      "Bounding box (x1, y1, x2, y2)": "(64, 250, 682, 659)"
+    },
+    {
+      "Object": "Object A (bus, large)",
+      "Condition": "Brightness + Blur",
+      "Detected": "Detected",
+      "Confidence": 0.8969,
+      "delta_C = C_original - C_modified": 0.0052,
+      "IoU vs original box": 0.974,
+      "Center shift (px)": 4.5,
+      "Width change (%)": 0.0,
+      "Height change (%)": 2.3,
+      "Bounding box (x1, y1, x2, y2)": "(65, 249, 682, 660)"
+    },
+    {
+      "Object": "Object B (car, small)",
+      "Condition": "Original",
+      "Detected": "Detected",
+      "Confidence": 0.3205,
+      "delta_C = C_original - C_modified": 0.0,
+      "IoU vs original box": 1.0,
+      "Center shift (px)": 0.0,
+      "Width change (%)": 0.0,
+      "Height change (%)": 0.0,
+      "Bounding box (x1, y1, x2, y2)": "(1194, 480, 1263, 602)"
+    },
+    {
+      "Object": "Object B (car, small)",
+      "Condition": "Reduced Brightness",
+      "Detected": "Detected",
+      "Confidence": 0.262,
+      "delta_C = C_original - C_modified": 0.0585,
+      "IoU vs original box": 0.969,
+      "Center shift (px)": 1.3,
+      "Width change (%)": 1.2,
+      "Height change (%)": 1.0,
+      "Bounding box (x1, y1, x2, y2)": "(1193, 480, 1263, 603)"
+    },
+    {
+      "Object": "Object B (car, small)",
+      "Condition": "Blurred",
+      "Detected": "Missed",
+      "Confidence": "missed/N/A",
+      "delta_C = C_original - C_modified": "N/A",
+      "IoU vs original box": 0.0,
+      "Center shift (px)": null,
+      "Width change (%)": null,
+      "Height change (%)": null,
+      "Bounding box (x1, y1, x2, y2)": "not detected"
+    },
+    {
+      "Object": "Object B (car, small)",
+      "Condition": "Brightness + Blur",
+      "Detected": "Missed",
+      "Confidence": "missed/N/A",
+      "delta_C = C_original - C_modified": "N/A",
+      "IoU vs original box": 0.0,
+      "Center shift (px)": null,
+      "Width change (%)": null,
+      "Height change (%)": null,
+      "Bounding box (x1, y1, x2, y2)": "not detected"
+    }
+  ],
+  "extra_detections": [
+    {
+      "Condition": "Reduced Brightness",
+      "Class": "person",
+      "Confidence": 0.3029,
+      "Bounding box": "(914, 459, 970, 536)",
+      "Best IoU vs same-class original box": 0.97,
+      "Best IoU vs any original box": 0.97,
+      "Category": "duplicate of an already detected object"
+    },
+    {
+      "Condition": "Reduced Brightness",
+      "Class": "person",
+      "Confidence": 0.2733,
+      "Bounding box": "(1113, 498, 1166, 544)",
+      "Best IoU vs same-class original box": 0.0,
+      "Best IoU vs any original box": 0.027,
+      "Category": "new - no counterpart in the original"
+    },
+    {
+      "Condition": "Blurred",
+      "Class": "person",
+      "Confidence": 0.2549,
+      "Bounding box": "(778, 464, 811, 559)",
+      "Best IoU vs same-class original box": 0.645,
+      "Best IoU vs any original box": 0.645,
+      "Category": "duplicate of an already detected object"
+    },
+    {
+      "Condition": "Blurred",
+      "Class": "person",
+      "Confidence": 0.3142,
+      "Bounding box": "(170, 411, 224, 476)",
+      "Best IoU vs same-class original box": 0.0,
+      "Best IoU vs any original box": 0.014,
+      "Category": "new - no counterpart in the original"
+    },
+    {
+      "Condition": "Blurred",
+      "Class": "person",
+      "Confidence": 0.2536,
+      "Bounding box": "(1245, 492, 1286, 613)",
+      "Best IoU vs same-class original box": 0.0,
+      "Best IoU vs any original box": 0.175,
+      "Category": "new - no counterpart in the original"
+    },
+    {
+      "Condition": "Brightness + Blur",
+      "Class": "person",
+      "Confidence": 0.2939,
+      "Bounding box": "(915, 460, 969, 535)",
+      "Best IoU vs same-class original box": 0.957,
+      "Best IoU vs any original box": 0.957,
+      "Category": "duplicate of an already detected object"
+    },
+    {
+      "Condition": "Brightness + Blur",
+      "Class": "person",
+      "Confidence": 0.2823,
+      "Bounding box": "(1244, 490, 1287, 613)",
+      "Best IoU vs same-class original box": 0.0,
+      "Best IoU vs any original box": 0.18,
+      "Category": "new - no counterpart in the original"
+    },
+    {
+      "Condition": "Brightness + Blur",
+      "Class": "person",
+      "Confidence": 0.2748,
+      "Bounding box": "(170, 410, 223, 477)",
+      "Best IoU vs same-class original box": 0.0,
+      "Best IoU vs any original box": 0.014,
+      "Category": "new - no counterpart in the original"
+    }
+  ],
+  "failure_case": {
+    "kind": "physical object missed after modification",
+    "condition": "Blurred",
+    "class_name": "car",
+    "original_confidence": 0.3205,
+    "original_bbox": [
+      1193.8,
+      479.7,
+      1262.8,
+      601.6
+    ],
+    "delta_C": "N/A (hypothetical 0.3205 under C_modified=0 convention)",
+    "nearest_same_class_iou": 0.062,
+    "nearest_any_class": {
+      "class_name": "person",
+      "iou": 0.175,
+      "confidence": 0.2536
+    },
+    "quality_original": {
+      "mean_brightness": 116.66,
+      "laplacian_variance": 1415.7
+    },
+    "quality_condition": {
+      "mean_brightness": 116.66,
+      "laplacian_variance": 19.4
+    }
+  }
+}

@@ -1,0 +1,5 @@
+Condition,Objects detected,Average confidence,"Inference time (ms, mean of 3 runs)",Missed objects,Missed object classes
+Original,9,0.6269,402.0,0,-
+Reduced Brightness,10,0.5888,373.6,0,-
+Blurred,10,0.5746,381.9,1,car
+Brightness + Blur,10,0.568,368.3,1,car
